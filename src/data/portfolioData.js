@@ -1,11 +1,11 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    title: 'Software Engineer | Backend & Integrations',
+    title: 'Software Engineer | Enterprise Integrations & Scalable Systems',
     shortBio:
-      'Engineer focused on building scalable integration systems, automation platforms, and backend-driven enterprise solutions.',
+      'Software engineer focused on high-scale data workflows, enterprise integrations, and backend-driven product experiences.',
     email: 'sreesumanth199@gmail.com',
-    phone: '+91-7095738136',
+    phone: '7095738136',
     location: 'Hyderabad, India',
     socials: {
       github: 'https://github.com/codetitan9999',
@@ -17,70 +17,77 @@ export const portfolioData = {
   },
   about: {
     shortBio:
-      'Software Engineer at Oracle NetSuite working on enterprise integrations, SuiteScript development, and Salesforce-Oracle middleware automation.',
+      'Software Engineer with experience building scalable export workflows, enterprise integrations, and backend-driven configuration platforms across Oracle ecosystems.',
     longBio:
-      'I am a Software Engineer at Oracle NetSuite focused on building enterprise-grade integrations across NetSuite, Salesforce, and Oracle Integration Cloud. I specialize in backend systems, API orchestration, data flows, and UI-driven configuration platforms. I enjoy solving complex integration problems and building scalable production-ready systems.'
+      'I worked as a Software Engineer at Oracle, where I optimized high-volume export systems, stabilized cross-system shipment workflows, and built self-serve mapping experiences for NetSuite and Salesforce integrations. My work spans JavaScript, React, Python, Angular, SQL, and API-led backend orchestration, with a strong focus on performance, reliability, and simplifying complex enterprise workflows.'
   },
   experience: [
     {
       company: 'Oracle',
       role: 'Software Engineer I',
       location: 'Hyderabad, India',
-      duration: 'July 2024 - Present',
+      duration: 'July 2024 - Apr. 2026',
       highlights: [
-        'Migrated a legacy Saved Search Export solution into a production-grade NetSuite SuiteApp using SuiteScript (JavaScript).',
-        'Stabilized post-release Inbound Shipment integration workflows by fixing functional defects in Python-based middleware systems.',
-        'Developing a UI-driven configuration platform for Salesforce Connector to replace manual middleware-based processes.',
-        'Led development of custom mapping UI using a React-based framework (UIF).',
-        'Integrated backend services with Oracle Integration Cloud (OIC) APIs for enterprise data orchestration.',
-        'Worked across SuiteApp, middleware, and Salesforce ecosystems to deliver enterprise integration features.'
+        'Served as the primary developer in optimizing and migrating a legacy high-volume data export solution to a scalable application framework with parallelized execution, reducing execution time by about 60 to 80 percent and improving reliability under concurrent workloads.',
+        'Improved reliability of an Amazon to NetSuite inbound-shipment integration by implementing the purchase-order sync workflow and resolving critical issues in Python- and Angular-based services.',
+        'Built a self-serve mapping experience in a React-based NetSuite single-page application, enabling non-technical users to configure mappings across NetSuite and Salesforce integrations.',
+        'Eliminated dependency on Oracle Integration Cloud for mapping configuration by reverse-engineering workflows and recreating them through APIs with support for direct, transformed, and conditional mappings.',
+        'Streamlined mapping setup through a backend-driven workflow abstraction, reducing configuration time from roughly 20 minutes to about 1 to 2 minutes per mapping.'
       ],
-      technologies: ['SuiteScript', 'JavaScript', 'Python', 'React', 'OIC', 'Salesforce', 'NetSuite']
+      technologies: [
+        'JavaScript',
+        'React',
+        'Python',
+        'Angular',
+        'SQL',
+        'NetSuite',
+        'Salesforce',
+        'Oracle Integration Cloud'
+      ]
     }
   ],
   projects: [
     {
-      title: 'Algorithm Visualizer',
-      subtitle: 'Python | Data Structures | Visualization',
-      description: 'Interactive visualization platform for sorting and path-finding algorithms.',
-      impact: 'Improves algorithm understanding through real-time animation.',
+      title: 'Smart Farm',
+      subtitle: 'ML | DL | Flask | IoT | Arduino | Node.js',
+      description:
+        'Agriculture-focused application for seed quality prediction, soil analysis, crop recommendation, and yield prediction.',
+      impact: 'Combined IoT sensor data with machine learning models to support smarter farm decisions and field analysis.',
       highlights: [
-        'Built real-time animated visualizations for sorting algorithms.',
-        'Implemented path-finding algorithms for educational use.'
+        'Integrated IoT sensors with ESP32 for live farm inputs.',
+        'Used Random Forest and ResNet50 v2 for prediction-oriented workflows.'
       ]
     },
     {
-      title: 'Smart Farm',
-      subtitle: 'Python | Flask | Machine Learning | IoT',
-      description:
-        'Agricultural decision-support system integrating machine learning models and IoT sensor insights.',
-      impact: 'Enabled data-backed crop recommendations and improved farming decision quality.',
+      title: 'Algorithm Visualizer',
+      subtitle: 'Python | Pygame | DSA',
+      description: 'Interactive Python and Pygame tool to visualize sorting and pathfinding algorithms in real time.',
+      impact: 'Made core data structures and algorithms concepts easier to understand through live visual feedback.',
       highlights: [
-        'Built ML-driven crop recommendation system.',
-        'Integrated soil and seed quality analysis through IoT data.'
+        'Built real-time animated visualizations for sorting algorithms.',
+        'Implemented pathfinding workflows for intuitive algorithm exploration.'
       ]
     }
   ],
   skills: {
-    languages: ['C++', 'Python', 'JavaScript', 'SQL'],
-    frameworks: ['React', 'REST APIs'],
-    databases: ['MySQL', 'Oracle', 'MongoDB'],
-    tools: ['GitLab', 'Postman', 'NetSuite']
+    languages: ['C++', 'JavaScript', 'Python'],
+    frameworks: ['React', 'Angular', 'Node.js', 'Express.js', 'Flask'],
+    databases: ['Oracle', 'MySQL', 'MongoDB'],
+    tools: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce', 'Oracle Integration Cloud'],
+    core: ['Data Structures and Algorithms', 'Computer Science Fundamentals', 'System Design Fundamentals']
   },
   education: {
-    degree: 'B.Tech in Computer Science and Engineering',
-    institution: 'VNR VJIET, Hyderabad',
-    duration: 'Nov 2020 - Apr 2024',
-    cgpa: '8.6'
+    degree: 'Bachelor of Technology in Computer Science and Engineering',
+    institution: 'VNR Vignana Jyothi Institute of Engineering and Technology',
+    duration: 'Nov. 2020 - Apr. 2024',
+    cgpa: '8.6/10.0'
   },
   certifications: [
-    'Smart Coder (Diamond) - Smart Interviews',
-    'HackerRank Problem Solving Certification',
-    'Goldman Sachs Engineering Virtual Program'
+    'Smart Coder (DSA) Program | Diamond Certificate, Smart Interviews',
+    'Goldman Sachs Engineering Virtual Program | Goldman Sachs'
   ],
   achievements: [
-    '3rd Place - Coding Contest (VNR VJIET)',
-    '4th Place - Megathon 2022 (IIIT Hyderabad)',
-    '6-Star Rating - HackerRank Problem Solving'
+    '3rd place in a VNR VJIET nationwide coding contest among 600 teams.',
+    '4th place in Megathon 2022 among 500 teams.'
   ]
 };

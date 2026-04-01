@@ -16,14 +16,19 @@ function SkillGroup({ title, items }) {
 }
 
 function SkillsSection({ skills }) {
+  const skillGroups = Object.entries(skills);
+
   return (
     <section className="panel" id="skills">
       <SectionTitle eyebrow="Technical Stack" title="Skills" />
       <div className="skills-grid">
-        <SkillGroup title="Languages" items={skills.languages} />
-        <SkillGroup title="Frameworks" items={skills.frameworks} />
-        <SkillGroup title="Databases" items={skills.databases} />
-        <SkillGroup title="Tools" items={skills.tools} />
+        {skillGroups.map(([key, items]) => (
+          <SkillGroup
+            key={key}
+            title={key.charAt(0).toUpperCase() + key.slice(1)}
+            items={items}
+          />
+        ))}
       </div>
     </section>
   );
