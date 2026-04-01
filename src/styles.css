@@ -250,6 +250,7 @@ main {
   padding: 0.45rem 0.75rem;
   font-size: 0.83rem;
   background: rgba(124, 212, 255, 0.09);
+  white-space: nowrap;
 }
 
 .chip.small {

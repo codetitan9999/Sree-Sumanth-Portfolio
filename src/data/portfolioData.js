@@ -1,9 +1,10 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    title: 'Software Engineer | Enterprise Integrations & Scalable Systems',
+    eyebrow: 'Building software that performs, scales, and lasts',
+    title: 'Software Engineer | Scalable Systems & Product Engineering',
     shortBio:
-      'Software engineer focused on high-scale data workflows, enterprise integrations, and backend-driven product experiences.',
+      'Software engineer with strong computer science fundamentals and experience building performant, scalable products across backend, frontend, and distributed systems.',
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
@@ -74,7 +75,7 @@ export const portfolioData = {
     frameworks: ['React', 'Angular', 'Node.js', 'Express.js', 'Flask'],
     databases: ['Oracle', 'MySQL', 'MongoDB'],
     tools: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce', 'Oracle Integration Cloud'],
-    core: ['Data Structures and Algorithms', 'Computer Science Fundamentals', 'System Design Fundamentals']
+    core: ['DSA', 'CS Fundamentals', 'System Design']
   },
   education: {
     degree: 'Bachelor of Technology in Computer Science and Engineering',

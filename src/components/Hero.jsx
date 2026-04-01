@@ -1,7 +1,7 @@
 function Hero({ personalInfo }) {
   return (
     <section className="hero panel" id="home">
-      <p className="eyebrow">Software Engineer Portfolio</p>
+      <p className="eyebrow">{personalInfo.eyebrow}</p>
       <h1>{personalInfo.fullName}</h1>
       <h3>{personalInfo.title}</h3>
       <p className="hero-copy">{personalInfo.shortBio}</p>

@@ -21,7 +21,7 @@ function ContactSection({ personalInfo }) {
     <section className="panel contact-panel" id="contact">
       <SectionTitle eyebrow="Contact" title="Let&apos;s Build Something Great" />
       <p className="body-text">
-        Open to backend, integration engineering, and enterprise automation opportunities.
+        Open to software engineering opportunities where I can build meaningful products and solve hard problems at scale.
       </p>
       <div className="contact-links">
         <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
