@@ -54,6 +54,9 @@ export const portfolioData = {
       description:
         'Frontend-first resume optimization platform with resume analysis, ATS-focused builder flows, and job-description-aware improvement paths.',
       impact: 'Turns resume review and optimization into a guided product experience with clear paths for analysis, rewriting, and builder-based editing.',
+      status: 'Prototype',
+      statusNote:
+        'Current version is an MVP focused on frontend experience and structured workflows, with deeper AI and backend capabilities still evolving.',
       highlights: [
         'Includes analysis, optimize, builder, billing, login, and signup flows.',
         'Structured for future AI, authentication, and payment integrations.'
@@ -67,6 +70,9 @@ export const portfolioData = {
       description:
         'A resume-aware job search control room for configuring company targets, filters, portal access, and scheduled search runs through a single interface.',
       impact: 'Brings profile setup, execution control, and job-search workflow management into one product surface with both local and deployable modes.',
+      status: 'Prototype',
+      statusNote:
+        'Current deployment demonstrates the control-room workflow and orchestration model, while real company connectors and full automation are still in progress.',
       highlights: [
         'Supports config save and load, run-now actions, recent run history, and live payload previews.',
         'Designed for both free manual Vercel deployments and persistent scheduler-friendly deployments.'
@@ -93,6 +99,9 @@ export const portfolioData = {
       description:
         'Agriculture-focused dashboard for seed checks, soil analysis, crop recommendation, and yield-oriented decisions using lightweight predictive workflows.',
       impact: 'Connects farm inputs and model-driven insights in a simple deployable dashboard for faster decision support.',
+      status: 'Prototype',
+      statusNote:
+        'Current version is a lightweight deployable dashboard with optional live sensor input, while deeper production-grade model and hardware integrations remain limited.',
       highlights: [
         'Combines Flask UI flows with heuristics and optional live sensor input.',
         'Designed to stay usable even without a live hardware endpoint.'
@@ -115,11 +124,22 @@ export const portfolioData = {
     }
   ],
   skills: {
-    languages: ['C++', 'JavaScript', 'Python'],
-    frameworks: ['React', 'Angular', 'Node.js', 'Express.js', 'Flask'],
-    databases: ['Oracle', 'MySQL', 'MongoDB'],
-    tools: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce', 'Oracle Integration Cloud'],
-    core: ['DSA', 'CS Fundamentals', 'System Design']
+    languages: ['C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
+    frontend: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Responsive UI'],
+    backend: ['Node.js', 'Express.js', 'Flask', 'REST APIs', 'Serverless APIs'],
+    data: ['MongoDB', 'MySQL', 'Oracle', 'Machine Learning', 'IoT', 'Arduino'],
+    platforms: [
+      'Git',
+      'Docker',
+      'Postman',
+      'Vercel',
+      'NetSuite',
+      'Salesforce',
+      'Oracle Integration Cloud',
+      'Zustand',
+      'Zod'
+    ],
+    core: ['DSA', 'CS Fundamentals', 'System Design', 'Distributed Systems', 'AI-Assisted Development']
   },
   education: {
     degree: 'Bachelor of Technology in Computer Science and Engineering',
@@ -133,6 +153,6 @@ export const portfolioData = {
   ],
   achievements: [
     '3rd place in a VNR VJIET nationwide coding contest among 600 teams.',
-    '4th place in Megathon 2022 among 500 teams.'
+    '4th place in Megathon 2022, a nationwide hackathon organized by IIIT Hyderabad, among 500 teams.'
   ]
 };
