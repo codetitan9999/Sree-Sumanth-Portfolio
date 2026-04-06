@@ -311,6 +311,30 @@ main {
   color: #98ffd9;
 }
 
+.project-highlights {
+  margin: 0.85rem 0 0;
+  padding-left: 1.1rem;
+  color: #d3e4f8;
+  line-height: 1.55;
+}
+
+.project-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.project-actions a {
+  text-decoration: none;
+  color: #04131c;
+  background: linear-gradient(125deg, var(--brand), #9beeff);
+  border-radius: 999px;
+  padding: 0.48rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 .contact-links,
 .social-links {
   margin-top: 1rem;
