@@ -18,9 +18,9 @@ export const portfolioData = {
   },
   about: {
     shortBio:
-      'Software Engineer with experience building scalable export workflows, enterprise integrations, and backend-driven configuration platforms across Oracle ecosystems.',
+      'Software Engineer with experience building scalable export workflows, enterprise integrations, and backend-driven configuration platforms across Oracle ecosystems. I work especially well with AI-assisted development workflows to prototype faster, debug efficiently, and move ideas into production with strong engineering judgment.',
     longBio:
-      'I worked as a Software Engineer at Oracle, where I optimized high-volume export systems, stabilized cross-system shipment workflows, and built self-serve mapping experiences for NetSuite and Salesforce integrations. My work spans JavaScript, React, Python, Angular, SQL, and API-led backend orchestration, with a strong focus on performance, reliability, and simplifying complex enterprise workflows.'
+      'I worked as a Software Engineer at Oracle, where I optimized high-volume export systems, stabilized cross-system shipment workflows, and built self-serve mapping experiences for NetSuite and Salesforce integrations. My work spans JavaScript, React, Python, Angular, SQL, and API-led backend orchestration, with a strong focus on performance, reliability, and simplifying complex enterprise workflows. I also use AI as a practical engineering accelerator: to break down ambiguous problems, explore solution paths quickly, speed up implementation, and improve debugging and product iteration without losing ownership of system design, correctness, or code quality.'
   },
   experience: [
     {
