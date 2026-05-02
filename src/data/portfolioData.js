@@ -1,26 +1,29 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    eyebrow: 'Building software that performs, scales, and lasts',
-    title: 'Software Engineer | Scalable Systems & Product Engineering',
+    eyebrow: 'Scaling systems, reducing friction, and shipping measurable product impact',
+    title: 'Software Engineer I at Oracle | Scalable Systems & Product Engineering',
     shortBio:
-      'Software engineer with strong computer science fundamentals and experience building performant, scalable products across backend, frontend, and distributed systems.',
+      'Software engineer with strong computer science fundamentals and hands-on experience building scalable product workflows across frontend, backend, and enterprise integrations.',
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
+    resumeUrl: '/Sree_Sumanth_Duddukuri_Resume.pdf',
     socials: {
       github: 'https://github.com/codetitan9999',
       linkedin: 'https://www.linkedin.com/in/sree-sumanth-duddukuri/',
       leetcode: 'https://leetcode.com/u/sreesumanth2002/',
       hackerrank: 'https://www.hackerrank.com/profile/sreesumanth199',
-      codechef: 'https://www.codechef.com/users/sumanth9999'
+      codechef: 'https://www.codechef.com/users/sumanth9999',
+      codeforces: 'https://codeforces.com/profile/sreesumanth99',
+      portfolio: 'https://sree-sumanth-portfolio.vercel.app/'
     }
   },
   about: {
     shortBio:
-      'Software Engineer with experience building scalable export workflows, enterprise integrations, and backend-driven configuration platforms across Oracle ecosystems. I work especially well with AI-assisted development workflows to prototype faster, debug efficiently, and move ideas into production with strong engineering judgment.',
+      'Software Engineer with experience building scalable export workflows, self-serve enterprise tooling, and integration-heavy product systems across Oracle ecosystems.',
     longBio:
-      'I worked as a Software Engineer at Oracle, where I optimized high-volume export systems, stabilized cross-system shipment workflows, and built self-serve mapping experiences for NetSuite and Salesforce integrations. My work spans JavaScript, React, Python, Angular, SQL, and API-led backend orchestration, with a strong focus on performance, reliability, and simplifying complex enterprise workflows. I also use AI as a practical engineering accelerator: to break down ambiguous problems, explore solution paths quickly, speed up implementation, and improve debugging and product iteration without losing ownership of system design, correctness, or code quality.'
+      'At Oracle, I work on high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is on turning operational bottlenecks into reliable product flows: improving execution speed, enabling faster onboarding, and simplifying complex mapping and shipment workflows with pragmatic engineering.'
   },
   experience: [
     {
@@ -29,26 +32,41 @@ export const portfolioData = {
       location: 'Hyderabad, India',
       duration: 'July 2024 - Present',
       highlights: [
-        'Served as the primary developer in migrating a legacy data export system to a parallelized processing model that handled more than 1 million records per run and payloads of about 200 MB, reducing execution time from roughly 14 minutes to about 2 to 5 minutes and eliminating timeout failures under strict execution limits.',
-        'Improved reliability of an Amazon to NetSuite inbound-shipment integration by implementing the purchase-order sync workflow and resolving critical issues in Python- and Angular-based services.',
-        'Built a self-serve mapping experience in a React-based NetSuite single-page application, enabling non-technical users to configure mappings across NetSuite and Salesforce integrations.',
-        'Eliminated dependency on Oracle Integration Cloud for mapping configuration by reverse-engineering workflows and recreating them through APIs with support for direct, transformed, and conditional mappings.',
-        'Streamlined mapping setup through a backend-driven workflow abstraction, reducing configuration time from roughly 20 minutes to about 1 to 2 minutes per mapping.'
+        'Served as the primary developer in migrating a legacy data export system to a parallelized processing model, handling 1M+ records per run (~200 MB payloads); reduced execution time from ~14 minutes to ~2-5 minutes and eliminated timeout failures under strict execution limits.',
+        'Built a critical self-serve mapping workflow for a product serving ~2.3K eligible customers, removing the need for PS/TS and support teams to handle mapping setup manually; reduced onboarding mapping turnaround from ~1 week to under 1 hour and supported typical customer configurations involving 100+ mappings with no hard system limit.',
+        'As 1 of 2 developers, reverse-engineered external OIC mapping workflows and replicated them via APIs, implementing payload generation, transformation logic, conditional routing, and bidirectional mappings; reduced setup time for a complex mapping from ~20 minutes to ~1-2 minutes and for a simple mapping to ~30-40 seconds.',
+        'Improved inbound-shipment processing reliability by implementing a purchase-order sync workflow and fixing backend defects, reducing sync failures by ~80-90% and stabilizing production usage across 1000+ customers.'
       ],
-      technologies: [
-        'JavaScript',
-        'React',
-        'Angular',
-        'Flask',
-        'SQL',
-        'Python',
-        'NetSuite',
-        'Salesforce',
-        'Oracle Integration Cloud'
-      ]
+      technologies: ['JavaScript', 'React', 'Angular', 'Flask', 'SQL']
     }
   ],
   projects: [
+    {
+      title: 'AI Resume Optimizer',
+      subtitle: 'Next.js | TypeScript | MongoDB | Tailwind CSS',
+      description:
+        'Full-stack Next.js application for AI-powered resume analysis, job-description alignment, and ATS-friendly resume building, with authentication, MongoDB-backed user persistence, and subscription-gated workflows.',
+      impact: 'Turns resume optimization into a real product flow with analysis, persistence, gated user journeys, and deployment-ready application structure.',
+      highlights: [
+        'Combines AI-assisted analysis, ATS-oriented resume refinement, and job-description-aware optimization.',
+        'Ships with authenticated workflows, persisted user data, and a structure ready for product expansion.'
+      ],
+      repoUrl: 'https://github.com/codetitan9999/AI-Resume-Optimizer',
+      liveUrl: 'https://ai-resume-optimizer-for-top-companies.vercel.app/'
+    },
+    {
+      title: 'Algorithm Visualizer',
+      subtitle: 'TypeScript | React | Data Structures & Algorithms',
+      description:
+        'Interactive TypeScript and React application for sorting and pathfinding visualization, with deterministic execution timelines, step-by-step playback, and live metrics.',
+      impact: 'Makes core DSA concepts easier to understand through visual state changes, repeatable execution flow, and learning-focused interaction.',
+      highlights: [
+        'Supports sorting and pathfinding flows with controlled playback for clearer algorithm tracing.',
+        'Pairs live metrics with visual transitions so algorithm behavior feels explorable instead of abstract.'
+      ],
+      repoUrl: 'https://github.com/codetitan9999/Algorithm_Visualizer',
+      liveUrl: 'https://algorithm-visualizer-xi-ten.vercel.app'
+    },
     {
       title: 'SignalHire AI',
       subtitle: 'JavaScript | AI Mock Interview | Evaluation Platform',
@@ -64,32 +82,6 @@ export const portfolioData = {
       ],
       repoUrl: 'https://github.com/codetitan9999/AiInterview',
       liveUrl: 'https://signalhire-ai.vercel.app'
-    },
-    {
-      title: 'AI Resume Optimizer',
-      subtitle: 'Next.js | TypeScript | MongoDB | Tailwind CSS',
-      description:
-        'Production web app for ATS-style resume analysis and job-description-based optimization, with AI-assisted feedback, live resume editing, and authentication-backed user workflows.',
-      impact: 'Combines resume analysis, job-description alignment, live editing, and authenticated user flows into a production-ready career-focused product experience.',
-      highlights: [
-        'Supports ATS-style analysis, job-description-aware optimization, live resume editing, and signed-in user workflows.',
-        'Built with an architecture that supports future AI, persistence, and product expansion cleanly.'
-      ],
-      repoUrl: 'https://github.com/codetitan9999/AI-Resume-Optimizer',
-      liveUrl: 'https://ai-resume-optimizer-for-top-companies.vercel.app/'
-    },
-    {
-      title: 'Algorithm Visualizer',
-      subtitle: 'TypeScript | React | Data Structures & Algorithms',
-      description:
-        'Interactive React application to visualize sorting and pathfinding algorithms with step-by-step playback and live metrics.',
-      impact: 'Improves clarity of core DSA concepts through controlled playback, live metrics, and visual algorithm state transitions.',
-      highlights: [
-        'Includes sorting and pathfinding workflows with step-wise playback for easier conceptual understanding.',
-        'Helps translate algorithm behavior into an interactive learning experience instead of static code alone.'
-      ],
-      repoUrl: 'https://github.com/codetitan9999/Algorithm_Visualizer',
-      liveUrl: 'https://algorithm-visualizer-xi-ten.vercel.app'
     },
     {
       title: 'JobHunt Control Room',
@@ -138,35 +130,37 @@ export const portfolioData = {
     }
   ],
   skills: {
-    languages: ['C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
-    frontend: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Responsive UI', 'Interview UI Flows'],
-    backend: ['Node.js', 'Express.js', 'Flask', 'REST APIs', 'Serverless APIs', 'Authentication Flows'],
-    data: ['MongoDB', 'MySQL', 'Oracle', 'Machine Learning', 'IoT', 'Arduino'],
-    platforms: [
-      'Git',
-      'Docker',
-      'Postman',
-      'Vercel',
-      'NetSuite',
-      'Salesforce',
-      'Oracle Integration Cloud',
-      'Zustand',
-      'Zod'
-    ],
-    core: ['DSA', 'CS Fundamentals', 'System Design', 'Distributed Systems', 'AI-Assisted Development', 'Interview Evaluation Systems']
+    languages: ['C++', 'JavaScript', 'Python'],
+    frameworks: ['React', 'Angular', 'Node.js', 'Express.js', 'Flask'],
+    toolsPlatforms: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce', 'Oracle Integration Cloud'],
+    databases: ['Oracle', 'MySQL', 'MongoDB'],
+    core: ['Data Structures and Algorithms', 'Computer Science Fundamentals', 'System Design Fundamentals']
   },
   education: {
     degree: 'Bachelor of Technology in Computer Science and Engineering',
     institution: 'VNR Vignana Jyothi Institute of Engineering and Technology',
+    location: 'Hyderabad, India',
     duration: 'Nov. 2020 - Apr. 2024',
     cgpa: '8.6/10.0'
   },
   certifications: [
-    'Smart Coder (DSA) Program | Diamond Certificate, Smart Interviews'
+    {
+      label: 'Smart Coder (DSA) Program | Diamond Certificate, Smart Interviews',
+      url: 'https://smartinterviews.in/certificate/fc1f7648'
+    }
   ],
   achievements: [
-    '3rd place in a VNR VJIET nationwide coding contest among 600 teams.',
-    '4th place in Megathon 2022, a nationwide hackathon organized by IIIT Hyderabad, among 500 teams.',
-    '6-Star in HackerRank Problem Solving.'
+    {
+      label: '3rd place in VNR VJIET nationwide coding contest | Among 600 teams',
+      url: 'https://drive.google.com/file/d/1QflX7DbUU1t2mQOtQM7eBkL1Yzp8vPGr/view?usp=sharing'
+    },
+    {
+      label: '4th place in Megathon 2022 | IIIT Hyderabad nationwide hackathon, 500 teams',
+      url: 'https://drive.google.com/file/d/1dTIaOF0wvbhiXrq18hR7oInmjweQPpzZ/view?usp=sharing'
+    },
+    {
+      label: '6-Star in HackerRank Problem Solving',
+      url: 'https://www.hackerrank.com/profile/sreesumanth199'
+    }
   ]
 };

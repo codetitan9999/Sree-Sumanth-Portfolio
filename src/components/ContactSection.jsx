@@ -17,6 +17,15 @@ function SocialLink({ label, href }) {
 }
 
 function ContactSection({ personalInfo }) {
+  const socialOrder = [
+    ['github', 'GitHub'],
+    ['linkedin', 'LinkedIn'],
+    ['leetcode', 'LeetCode'],
+    ['hackerrank', 'HackerRank'],
+    ['codechef', 'CodeChef'],
+    ['codeforces', 'Codeforces']
+  ];
+
   return (
     <section className="panel contact-panel" id="contact">
       <SectionTitle eyebrow="Contact" title="Let&apos;s Build Something Great" />
@@ -26,13 +35,14 @@ function ContactSection({ personalInfo }) {
       <div className="contact-links">
         <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
         <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}>{personalInfo.phone}</a>
+        <a href={personalInfo.resumeUrl} target="_blank" rel="noreferrer">
+          Resume
+        </a>
       </div>
       <div className="social-links">
-        <SocialLink label="GitHub" href={personalInfo.socials.github} />
-        <SocialLink label="LinkedIn" href={personalInfo.socials.linkedin} />
-        <SocialLink label="LeetCode" href={personalInfo.socials.leetcode} />
-        <SocialLink label="HackerRank" href={personalInfo.socials.hackerrank} />
-        <SocialLink label="CodeChef" href={personalInfo.socials.codechef} />
+        {socialOrder.map(([key, label]) => (
+          <SocialLink key={key} label={label} href={personalInfo.socials[key]} />
+        ))}
       </div>
     </section>
   );

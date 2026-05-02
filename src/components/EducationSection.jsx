@@ -7,6 +7,7 @@ function EducationSection({ education }) {
       <article className="mini-card">
         <h4>{education.degree}</h4>
         <p>{education.institution}</p>
+        {education.location ? <p>{education.location}</p> : null}
         <p>{education.duration}</p>
         <p>CGPA: {education.cgpa}</p>
       </article>

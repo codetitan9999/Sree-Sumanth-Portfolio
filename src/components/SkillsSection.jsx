@@ -17,6 +17,13 @@ function SkillGroup({ title, items }) {
 
 function SkillsSection({ skills }) {
   const skillGroups = Object.entries(skills);
+  const titleMap = {
+    languages: 'Languages',
+    frameworks: 'Frameworks',
+    toolsPlatforms: 'Tools & Platforms',
+    databases: 'Databases',
+    core: 'Core'
+  };
 
   return (
     <section className="panel" id="skills">
@@ -25,7 +32,7 @@ function SkillsSection({ skills }) {
         {skillGroups.map(([key, items]) => (
           <SkillGroup
             key={key}
-            title={key.charAt(0).toUpperCase() + key.slice(1)}
+            title={titleMap[key] ?? key}
             items={items}
           />
         ))}

@@ -7,11 +7,14 @@ function Hero({ personalInfo }) {
       <p className="hero-copy">{personalInfo.shortBio}</p>
 
       <div className="hero-actions">
-        <a className="btn btn-primary" href="#contact">
-          Contact Me
+        <a className="btn btn-primary" href={personalInfo.resumeUrl} target="_blank" rel="noreferrer">
+          Download Resume
         </a>
         <a className="btn btn-ghost" href="#projects">
           View Projects
+        </a>
+        <a className="btn btn-ghost" href="#contact">
+          Contact Me
         </a>
       </div>
 

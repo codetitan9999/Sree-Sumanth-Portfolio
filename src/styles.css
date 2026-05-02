@@ -234,6 +234,20 @@ main {
   color: #d8e5f7;
 }
 
+.mini-card a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.mini-card a:hover,
+.mini-card a:focus-visible,
+.contact-links a:hover,
+.contact-links a:focus-visible,
+.social-links a:hover,
+.social-links a:focus-visible {
+  text-decoration: underline;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
