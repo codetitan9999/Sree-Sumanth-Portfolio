@@ -1,10 +1,10 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    eyebrow: 'Scaling systems, reducing friction, and shipping measurable product impact',
-    title: 'Software Engineer I at Oracle | Scalable Systems & Product Engineering',
+    eyebrow: 'Building scalable product workflows, faster onboarding paths, and reliable enterprise systems',
+    title: 'Software Engineer I at Oracle | Product Engineering & Workflow Systems',
     shortBio:
-      'Software engineer with strong computer science fundamentals and hands-on experience building scalable product workflows across frontend, backend, and enterprise integrations.',
+      'Software engineer with strong CS fundamentals and hands-on experience building scalable workflows across frontend, backend, APIs, and enterprise integrations.',
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
@@ -23,7 +23,7 @@ export const portfolioData = {
     shortBio:
       'Software Engineer with experience building scalable export workflows, self-serve enterprise tooling, and integration-heavy product systems across Oracle ecosystems.',
     longBio:
-      'At Oracle, I work on high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is on turning operational bottlenecks into reliable product flows: improving execution speed, enabling faster onboarding, and simplifying complex mapping and shipment workflows with pragmatic engineering.'
+      'At Oracle, I work on high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is turning operational bottlenecks into durable product flows: improving execution speed, shortening onboarding setup from days to hours, and simplifying complex mapping and shipment workflows with pragmatic engineering.'
   },
   experience: [
     {
@@ -32,37 +32,38 @@ export const portfolioData = {
       location: 'Hyderabad, India',
       duration: 'July 2024 - Present',
       highlights: [
-        'Served as the primary developer in migrating a legacy data export system to a parallelized processing model, handling 1M+ records per run (~200 MB payloads); reduced execution time from ~14 minutes to ~2-5 minutes and eliminated timeout failures under strict execution limits.',
-        'Built a critical self-serve mapping workflow for a product serving ~2.3K eligible customers, removing the need for PS/TS and support teams to handle mapping setup manually; reduced onboarding mapping turnaround from ~1 week to under 1 hour and supported typical customer configurations involving 100+ mappings with no hard system limit.',
-        'As 1 of 2 developers, reverse-engineered external OIC mapping workflows and replicated them via APIs, implementing payload generation, transformation logic, conditional routing, and bidirectional mappings; reduced setup time for a complex mapping from ~20 minutes to ~1-2 minutes and for a simple mapping to ~30-40 seconds.',
+        'Migrated a legacy data export system to a parallelized processing model, handling 1M+ records per run (~200 MB payloads); reduced execution time from ~14 minutes to ~2-5 minutes and eliminated timeout failures under strict execution limits.',
+        'Delivered a critical self-serve mapping workflow for a product serving ~2.3K eligible customers, removing the need for implementation and support teams to handle mapping setup manually; reduced onboarding mapping turnaround from ~1 week to under 1 hour and supported typical customer configurations involving 100+ mappings with no hard system limit.',
+        'Reverse-engineered external integration workflows and replicated them via APIs, implementing payload generation, transformation logic, conditional routing, and bidirectional mappings; reduced setup time for a complex mapping from ~20 minutes to ~1-2 minutes and for a simple mapping to ~30-40 seconds.',
         'Improved inbound-shipment processing reliability by implementing a purchase-order sync workflow and fixing backend defects, reducing sync failures by ~80-90% and stabilizing production usage across 1000+ customers.'
       ],
-      technologies: ['JavaScript', 'React', 'Angular', 'Flask', 'SQL']
+      technologies: ['JavaScript', 'Node.js', 'REST APIs', 'SQL', 'React', 'Angular', 'Flask']
     }
   ],
   projects: [
     {
-      title: 'AI Resume Optimizer',
-      subtitle: 'Next.js | TypeScript | MongoDB | Tailwind CSS',
+      title: 'Durable Workflow Engine',
+      subtitle: 'Go | PostgreSQL | Redis Streams | React',
       description:
-        'Full-stack Next.js application for AI-powered resume analysis, job-description alignment, and ATS-friendly resume building, with authentication, MongoDB-backed user persistence, and subscription-gated workflows.',
-      impact: 'Turns resume optimization into a real product flow with analysis, persistence, gated user journeys, and deployment-ready application structure.',
+        'A durable workflow engine starter built for asynchronous job orchestration, pairing a multi-service backend with live execution visibility and a React-driven operational interface.',
+      impact: 'Demonstrates production-style workflow orchestration with durable state transitions, async dispatch, and visibility across execution lifecycles instead of a toy background-job demo.',
       highlights: [
-        'Combines AI-assisted analysis, ATS-oriented resume refinement, and job-description-aware optimization.',
-        'Ships with authenticated workflows, persisted user data, and a structure ready for product expansion.'
+        'Built a durable workflow engine starter with 3 application services, an 8-service local stack, 5 core workflow tables, and 7 backend endpoints for asynchronous job orchestration.',
+        'Implemented and verified an end-to-end workflow execution path with 9 durable writes across execution, task, attempt, and outbox state using Postgres-first orchestration and Redis Streams dispatch.',
+        'Added live execution and task visibility so workflow progress can be inspected as state moves across the system.'
       ],
-      repoUrl: 'https://github.com/codetitan9999/AI-Resume-Optimizer',
-      liveUrl: 'https://ai-resume-optimizer-for-top-companies.vercel.app/'
+      repoUrl: 'https://github.com/codetitan9999/durable-workflow-engine'
     },
     {
       title: 'Algorithm Visualizer',
       subtitle: 'TypeScript | React | Data Structures & Algorithms',
       description:
-        'Interactive TypeScript and React application for sorting and pathfinding visualization, with deterministic execution timelines, step-by-step playback, and live metrics.',
-      impact: 'Makes core DSA concepts easier to understand through visual state changes, repeatable execution flow, and learning-focused interaction.',
+        'Interactive TypeScript and React application for sorting and pathfinding visualization, with deterministic execution timelines, step-by-step playback, and learning-focused controls.',
+      impact: 'Makes core DSA concepts easier to understand through visual state changes, repeatable execution flow, and side-by-side implementation references.',
       highlights: [
-        'Supports sorting and pathfinding flows with controlled playback for clearer algorithm tracing.',
-        'Pairs live metrics with visual transitions so algorithm behavior feels explorable instead of abstract.'
+        'Developed 7 sorting and pathfinding simulations with deterministic playback for clearer algorithm tracing.',
+        'Added 4-language implementation references so users can connect the visual flow to actual code.',
+        'Included automated coverage for core logic to keep the interactive behavior stable as features evolve.'
       ],
       repoUrl: 'https://github.com/codetitan9999/Algorithm_Visualizer',
       liveUrl: 'https://algorithm-visualizer-xi-ten.vercel.app'
@@ -130,11 +131,18 @@ export const portfolioData = {
     }
   ],
   skills: {
-    languages: ['C++', 'JavaScript', 'Python'],
-    frameworks: ['React', 'Angular', 'Node.js', 'Express.js', 'Flask'],
-    toolsPlatforms: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce', 'Oracle Integration Cloud'],
+    languages: ['C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
+    frontend: ['React', 'Next.js', 'Angular', 'HTML/CSS'],
+    backendApis: ['Node.js', 'Express.js', 'Flask', 'REST APIs'],
+    toolsPlatforms: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce'],
     databases: ['Oracle', 'MySQL', 'MongoDB'],
-    core: ['Data Structures and Algorithms', 'Computer Science Fundamentals', 'System Design Fundamentals']
+    core: [
+      'Data Structures and Algorithms',
+      'Object-Oriented Programming',
+      'DBMS',
+      'Operating Systems',
+      'Computer Networks'
+    ]
   },
   education: {
     degree: 'Bachelor of Technology in Computer Science and Engineering',
@@ -145,21 +153,21 @@ export const portfolioData = {
   },
   certifications: [
     {
-      label: 'Smart Coder (DSA) Program | Diamond Certificate, Smart Interviews',
+      label: 'Diamond Certificate in Smart Coder (DSA) Program | Smart Interviews',
       url: 'https://smartinterviews.in/certificate/fc1f7648'
     }
   ],
   achievements: [
     {
-      label: '3rd place in VNR VJIET nationwide coding contest | Among 600 teams',
+      label: '3rd Place in VNR VJIET Nationwide Coding Contest | Among 600 teams',
       url: 'https://drive.google.com/file/d/1QflX7DbUU1t2mQOtQM7eBkL1Yzp8vPGr/view?usp=sharing'
     },
     {
-      label: '4th place in Megathon 2022 | IIIT Hyderabad nationwide hackathon, 500 teams',
+      label: '4th Place in Megathon 2022 at IIIT Hyderabad | Among 500 teams',
       url: 'https://drive.google.com/file/d/1dTIaOF0wvbhiXrq18hR7oInmjweQPpzZ/view?usp=sharing'
     },
     {
-      label: '6-Star in HackerRank Problem Solving',
+      label: '6-Star Rating in HackerRank Problem Solving',
       url: 'https://www.hackerrank.com/profile/sreesumanth199'
     }
   ]

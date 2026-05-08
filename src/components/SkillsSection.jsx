@@ -19,7 +19,8 @@ function SkillsSection({ skills }) {
   const skillGroups = Object.entries(skills);
   const titleMap = {
     languages: 'Languages',
-    frameworks: 'Frameworks',
+    frontend: 'Frontend',
+    backendApis: 'Backend & APIs',
     toolsPlatforms: 'Tools & Platforms',
     databases: 'Databases',
     core: 'Core'

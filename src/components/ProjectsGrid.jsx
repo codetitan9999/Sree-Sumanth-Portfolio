@@ -5,8 +5,8 @@ function ProjectsGrid({ projects }) {
     <section className="panel" id="projects">
       <SectionTitle eyebrow="Selected Work" title="Projects & Live Demos" />
       <p className="projects-lede">
-        A curated set of product-focused builds spanning developer tools, AI workflows,
-        interactive visual systems, and full-stack applications.
+        A curated set of builds spanning workflow systems, interactive visual tools,
+        AI product experiments, and full-stack applications.
       </p>
       <div className="projects-grid">
         {projects.map((project, index) => {
