@@ -52,7 +52,7 @@ export const portfolioData = {
         'Implemented and verified an end-to-end workflow execution path with 9 durable writes across execution, task, attempt, and outbox state using Postgres-first orchestration and Redis Streams dispatch.',
         'Added live execution and task visibility so workflow progress can be inspected as state moves across the system.'
       ],
-      repoUrl: 'https://github.com/codetitan9999/durable-workflow-engine'
+      repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
     {
       title: 'Algorithm Visualizer',
