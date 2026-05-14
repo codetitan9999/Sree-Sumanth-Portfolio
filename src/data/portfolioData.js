@@ -1,10 +1,10 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    eyebrow: 'Building scalable product workflows, faster onboarding paths, and reliable enterprise systems',
-    title: 'Software Engineer I at Oracle | Product Engineering & Workflow Systems',
+    eyebrow: 'Building and optimising scalable distributed systems',
+    title: 'Software Engineer I at Oracle | Full Stack Developer',
     shortBio:
-      'Software engineer with strong CS fundamentals and hands-on experience building scalable workflows across frontend, backend, APIs, and enterprise integrations.',
+      'Full stack developer with strong CS fundamentals and hands-on experience building scalable systems across frontend, backend, APIs, databases, and enterprise integrations.',
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
@@ -21,9 +21,9 @@ export const portfolioData = {
   },
   about: {
     shortBio:
-      'Software Engineer with experience building scalable export workflows, self-serve enterprise tooling, and integration-heavy product systems across Oracle ecosystems.',
+      'Full stack developer at Oracle with experience building scalable export workflows, self-serve enterprise tooling, and integration-heavy product systems across frontend, backend, and database layers.',
     longBio:
-      'At Oracle, I work on high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is turning operational bottlenecks into durable product flows: improving execution speed, shortening onboarding setup from days to hours, and simplifying complex mapping and shipment workflows with pragmatic engineering.'
+      'At Oracle, I work across frontend, backend, APIs, and databases to build high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is on building and optimising scalable distributed systems that reduce operational bottlenecks, improve execution speed, shorten onboarding from weeks to under an hour, and make complex workflows more reliable in production.'
   },
   experience: [
     {
@@ -32,12 +32,13 @@ export const portfolioData = {
       location: 'Hyderabad, India',
       duration: 'July 2024 - Present',
       highlights: [
-        'Migrated a legacy data export system to a parallelized processing model, handling 1M+ records per run (~200 MB payloads); reduced execution time from ~14 minutes to ~2-5 minutes and eliminated timeout failures under strict execution limits.',
-        'Delivered a critical self-serve mapping workflow for a product serving ~2.3K eligible customers, removing the need for implementation and support teams to handle mapping setup manually; reduced onboarding mapping turnaround from ~1 week to under 1 hour and supported typical customer configurations involving 100+ mappings with no hard system limit.',
-        'Reverse-engineered external integration workflows and replicated them via APIs, implementing payload generation, transformation logic, conditional routing, and bidirectional mappings; reduced setup time for a complex mapping from ~20 minutes to ~1-2 minutes and for a simple mapping to ~30-40 seconds.',
-        'Improved inbound-shipment processing reliability by implementing a purchase-order sync workflow and fixing backend defects, reducing sync failures by ~80-90% and stabilizing production usage across 1000+ customers.'
+        'Migrated a single-threaded export system to a queue-driven parallel batch processor with worker-based execution, batching, retries, and failure isolation, enabling concurrent execution of 1M+ record workloads (~200 MB per run) while reducing runtime from ~14 minutes to ~2-5 minutes and eliminating timeouts.',
+        'Delivered a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
+        'Reverse-engineered existing cross-system mapping workflows and implemented backend APIs for payload generation, transformation logic, conditional routing, and bidirectional mappings, decreasing setup time by ~90-95% from ~20 minutes to ~1-2 minutes.',
+        'Improved reliability of inbound-shipment sync across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering sync failures by ~80-90%.',
+        'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week release delay for a rollout affecting 1000+ customers.'
       ],
-      technologies: ['JavaScript', 'Node.js', 'REST APIs', 'SQL', 'React', 'Angular', 'Flask']
+      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React', 'Angular']
     }
   ],
   projects: [
@@ -45,12 +46,12 @@ export const portfolioData = {
       title: 'Durable Workflow Engine',
       subtitle: 'Go | PostgreSQL | Redis Streams | React',
       description:
-        'A durable workflow engine starter built for asynchronous job orchestration, pairing a multi-service backend with live execution visibility and a React-driven operational interface.',
-      impact: 'Demonstrates production-style workflow orchestration with durable state transitions, async dispatch, and visibility across execution lifecycles instead of a toy background-job demo.',
+        'A durable workflow engine for asynchronous job orchestration built with Postgres-first state tracking, Redis Streams queues, and separated API and worker services across a 3-service architecture.',
+      impact: 'Demonstrates production-style workflow orchestration with durable state transitions, async dispatch, worker processing, and live execution visibility instead of a toy background-job demo.',
       highlights: [
-        'Built a durable workflow engine starter with 3 application services, an 8-service local stack, 5 core workflow tables, and 7 backend endpoints for asynchronous job orchestration.',
-        'Implemented and verified an end-to-end workflow execution path with 9 durable writes across execution, task, attempt, and outbox state using Postgres-first orchestration and Redis Streams dispatch.',
-        'Added live execution and task visibility so workflow progress can be inspected as state moves across the system.'
+        'Built a durable workflow engine for asynchronous job orchestration using Postgres-first state tracking, Redis Streams queues, and separated API and worker services across a 3-service application architecture.',
+        'Implemented and verified end-to-end execution tracking with outbox-based dispatch, worker processing, task history, and live execution visibility across 5 core workflow tables and 7 backend endpoints.',
+        'Designed the system so execution state remains inspectable and durable as work moves across queueing, processing, and completion stages.'
       ],
       repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
@@ -132,10 +133,10 @@ export const portfolioData = {
   ],
   skills: {
     languages: ['C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
-    frontend: ['React', 'Next.js', 'Angular', 'HTML/CSS'],
+    frontend: ['React', 'HTML/CSS'],
     backendApis: ['Node.js', 'Express.js', 'Flask', 'REST APIs'],
     toolsPlatforms: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce'],
-    databases: ['Oracle', 'MySQL', 'MongoDB'],
+    databases: ['PostgreSQL', 'Oracle', 'MySQL', 'MongoDB'],
     core: [
       'Data Structures and Algorithms',
       'Object-Oriented Programming',
