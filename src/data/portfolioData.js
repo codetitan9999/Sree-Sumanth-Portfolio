@@ -28,17 +28,17 @@ export const portfolioData = {
   experience: [
     {
       company: 'Oracle',
-      role: 'Software Engineer I',
+      role: 'Software Engineer 1',
       location: 'Hyderabad, India',
-      duration: 'July 2024 - Present',
+      duration: 'Jul 2024 - May 2026',
       highlights: [
-        'Migrated a single-threaded export system to a queue-driven parallel batch processor with worker-based execution, batching, retries, and failure isolation, enabling concurrent execution of 1M+ record workloads (~200 MB per run) while reducing runtime from ~14 minutes to ~2-5 minutes and eliminating timeouts.',
-        'Delivered a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
+        'Built a queue-driven parallel batch processor for a legacy export system with worker-based execution, batching, retries, and failure isolation, enabling concurrent execution of 1M+ record workloads (~200 MB/run) while reducing runtime from ~14 minutes to ~2-5 minutes and eliminating timeout failures.',
+        'Built a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
         'Reverse-engineered existing cross-system mapping workflows and implemented backend APIs for payload generation, transformation logic, conditional routing, and bidirectional mappings, decreasing setup time by ~90-95% from ~20 minutes to ~1-2 minutes.',
-        'Improved reliability of inbound-shipment sync across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering sync failures by ~80-90%.',
-        'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week release delay for a rollout affecting 1000+ customers.'
+        'Improved inbound-shipment sync reliability across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering production sync failures by ~80-90%.',
+        'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week delay for a rollout affecting 1000+ customers.'
       ],
-      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React', 'Angular']
+      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React']
     }
   ],
   projects: [
@@ -46,12 +46,12 @@ export const portfolioData = {
       title: 'Durable Workflow Engine',
       subtitle: 'Go | PostgreSQL | Redis Streams | React',
       description:
-        'A durable workflow engine for asynchronous job orchestration built with Postgres-first state tracking, Redis Streams queues, and separated API and worker services across a 3-service architecture.',
-      impact: 'Demonstrates production-style workflow orchestration with durable state transitions, async dispatch, worker processing, and live execution visibility instead of a toy background-job demo.',
+        'A durable workflow engine built to make long-running background jobs reliable, using Postgres-backed execution state, Redis Streams task queues, API/worker separation, and outbox-based dispatch for asynchronous orchestration.',
+      impact: 'Shows how durable state, queue-backed execution, and worker separation can make long-running job systems reliable and inspectable in practice.',
       highlights: [
-        'Built a durable workflow engine for asynchronous job orchestration using Postgres-first state tracking, Redis Streams queues, and separated API and worker services across a 3-service application architecture.',
-        'Implemented and verified end-to-end execution tracking with outbox-based dispatch, worker processing, task history, and live execution visibility across 5 core workflow tables and 7 backend endpoints.',
-        'Designed the system so execution state remains inspectable and durable as work moves across queueing, processing, and completion stages.'
+        'Built a durable workflow engine to make long-running background jobs reliable, with Postgres-backed execution state, Redis Streams task queues, API/worker separation, and outbox-based dispatch for asynchronous orchestration.',
+        'Implemented end-to-end execution tracking, worker processing, task history, and live status visibility across 5 workflow tables and 7 service endpoints.',
+        'Designed the system so execution state remains durable and inspectable as work moves across queueing, processing, and completion stages.'
       ],
       repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
@@ -59,11 +59,11 @@ export const portfolioData = {
       title: 'Algorithm Visualizer',
       subtitle: 'TypeScript | React | Data Structures & Algorithms',
       description:
-        'Interactive TypeScript and React application for sorting and pathfinding visualization, with deterministic execution timelines, step-by-step playback, and learning-focused controls.',
+        'Interactive TypeScript and React application for learning sorting, searching, and pathfinding algorithms through deterministic playback and language-switchable code references.',
       impact: 'Makes core DSA concepts easier to understand through visual state changes, repeatable execution flow, and side-by-side implementation references.',
       highlights: [
-        'Developed 7 sorting and pathfinding simulations with deterministic playback for clearer algorithm tracing.',
-        'Added 4-language implementation references so users can connect the visual flow to actual code.',
+        'Developed 9 simulations covering sorting, searching, and pathfinding algorithms with deterministic playback for clearer tracing.',
+        'Added language-switchable implementation references in 4 languages so users can connect the visual flow to actual code.',
         'Included automated coverage for core logic to keep the interactive behavior stable as features evolve.'
       ],
       repoUrl: 'https://github.com/codetitan9999/Algorithm_Visualizer',
@@ -132,11 +132,11 @@ export const portfolioData = {
     }
   ],
   skills: {
-    languages: ['C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
+    languages: ['C++', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
     frontend: ['React', 'HTML/CSS'],
-    backendApis: ['Node.js', 'Express.js', 'Flask', 'REST APIs'],
-    toolsPlatforms: ['Git', 'Docker', 'Postman', 'NetSuite', 'Salesforce'],
-    databases: ['PostgreSQL', 'Oracle', 'MySQL', 'MongoDB'],
+    backendApis: ['Node.js', 'Flask', 'REST APIs', 'Redis Streams'],
+    toolsPlatforms: ['Git', 'Docker', 'Postman'],
+    databases: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB'],
     core: [
       'Data Structures and Algorithms',
       'Object-Oriented Programming',
@@ -160,16 +160,20 @@ export const portfolioData = {
   ],
   achievements: [
     {
+      label: '3-Star Coder on CodeChef | 1800+ DSA Rating, Best Global Rank 16',
+      url: 'https://www.codechef.com/users/sumanth9999'
+    },
+    {
+      label: 'Knight Badge on LeetCode | Max Contest Rating 1850+, Top 7%',
+      url: 'https://leetcode.com/u/sreesumanth2002/'
+    },
+    {
       label: '3rd Place in VNR VJIET Nationwide Coding Contest | Among 600 teams',
       url: 'https://drive.google.com/file/d/1QflX7DbUU1t2mQOtQM7eBkL1Yzp8vPGr/view?usp=sharing'
     },
     {
       label: '4th Place in Megathon 2022 at IIIT Hyderabad | Among 500 teams',
       url: 'https://drive.google.com/file/d/1dTIaOF0wvbhiXrq18hR7oInmjweQPpzZ/view?usp=sharing'
-    },
-    {
-      label: '6-Star Rating in HackerRank Problem Solving',
-      url: 'https://www.hackerrank.com/profile/sreesumanth199'
     }
   ]
 };
