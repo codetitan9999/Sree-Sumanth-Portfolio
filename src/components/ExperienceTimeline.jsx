@@ -1,9 +1,10 @@
 import SectionTitle from './SectionTitle';
 
-function ExperienceTimeline({ experience }) {
+function ExperienceTimeline({ experience, intro }) {
   return (
     <section className="panel" id="experience">
       <SectionTitle eyebrow="Professional Journey" title="Experience Timeline" />
+      {intro ? <p className="experience-intro">{intro}</p> : null}
       <div className="timeline">
         {experience.map((item) => (
           <article className="timeline-item" key={`${item.company}-${item.role}`}>

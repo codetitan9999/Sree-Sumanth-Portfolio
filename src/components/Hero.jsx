@@ -5,6 +5,13 @@ function Hero({ personalInfo }) {
       <h1>{personalInfo.fullName}</h1>
       <h3>{personalInfo.title}</h3>
       <p className="hero-copy">{personalInfo.shortBio}</p>
+      <div className="proof-strip" aria-label="Key proof points">
+        {personalInfo.proofStrip?.map((item) => (
+          <span className="proof-pill" key={item}>
+            {item}
+          </span>
+        ))}
+      </div>
 
       <div className="hero-actions">
         <a className="btn btn-primary" href={personalInfo.resumeUrl} target="_blank" rel="noreferrer">

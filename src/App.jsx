@@ -10,7 +10,7 @@ import SkillsSection from './components/SkillsSection';
 import { portfolioData } from './data/portfolioData';
 
 function App() {
-  const { personalInfo, about, experience, projects, skills, education, certifications, achievements } =
+  const { personalInfo, about, experienceIntro, experience, projects, skills, education, certifications, achievements } =
     portfolioData;
 
   return (
@@ -23,7 +23,7 @@ function App() {
       <main>
         <Hero personalInfo={personalInfo} />
         <AboutSection about={about} />
-        <ExperienceTimeline experience={experience} />
+        <ExperienceTimeline experience={experience} intro={experienceIntro} />
         <ProjectsGrid projects={projects} />
         <SkillsSection skills={skills} />
         <EducationSection education={education} />

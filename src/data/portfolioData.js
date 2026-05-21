@@ -1,10 +1,16 @@
 export const portfolioData = {
   personalInfo: {
     fullName: 'Sree Sumanth Duddukuri',
-    eyebrow: 'Building and optimising scalable distributed systems',
-    title: 'Software Engineer I at Oracle | Full Stack Developer',
+    eyebrow: 'Building reliable backend systems and scalable APIs',
+    title: 'Software Engineer | Ex-Oracle | Backend Systems, APIs, Workflow Automation',
     shortBio:
-      'Full stack developer with strong CS fundamentals and hands-on experience building scalable systems across frontend, backend, APIs, databases, and enterprise integrations.',
+      'Backend-oriented software engineer with experience building scalable data-processing systems, self-serve integration workflows, and reliable production software. I enjoy solving high-impact engineering problems involving performance, debugging, asynchronous processing, and system reliability.',
+    proofStrip: [
+      '1M+ record workloads',
+      '2.3K customers served',
+      '1000+ customer workflows',
+      '10+ release blockers resolved'
+    ],
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
@@ -21,10 +27,12 @@ export const portfolioData = {
   },
   about: {
     shortBio:
-      'Full stack developer at Oracle with experience building scalable export workflows, self-serve enterprise tooling, and integration-heavy product systems across frontend, backend, and database layers.',
+      'I’m a backend-oriented software engineer who enjoys turning ambiguous, high-pressure problems into reliable systems and measurable outcomes. I’m most energized by debugging complex issues, improving performance, and simplifying messy workflows into something scalable and easy to use.',
     longBio:
-      'At Oracle, I work across frontend, backend, APIs, and databases to build high-volume export systems, integration workflows, and self-serve configuration experiences used across enterprise products. My focus is on building and optimising scalable distributed systems that reduce operational bottlenecks, improve execution speed, shorten onboarding from weeks to under an hour, and make complex workflows more reliable in production.'
+      'I’m adaptable and quick to learn, which has helped me pick up new technologies, understand complex systems, and contribute effectively in fast-paced environments. Outside of work, I spend a lot of time strengthening my understanding of systems, problem solving, and software engineering fundamentals. Competitive programming and continuous upskilling are a big part of that for me.'
   },
+  experienceIntro:
+    'At Oracle, I worked on large-scale backend systems and enterprise integrations across NetSuite and Salesforce products, with a focus on performance, reliability, and self-serve workflow automation.',
   experience: [
     {
       company: 'Oracle',
@@ -38,7 +46,7 @@ export const portfolioData = {
         'Improved inbound-shipment sync reliability across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering production sync failures by ~80-90%.',
         'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week delay for a rollout affecting 1000+ customers.'
       ],
-      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React']
+      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'NetSuite', 'Salesforce']
     }
   ],
   projects: [
