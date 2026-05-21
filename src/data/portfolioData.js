@@ -5,12 +5,6 @@ export const portfolioData = {
     title: 'Software Engineer | Ex-Oracle | Backend Systems, APIs, Workflow Automation',
     shortBio:
       'Backend-oriented software engineer with experience building scalable data-processing systems, self-serve integration workflows, and reliable production software. I enjoy solving high-impact engineering problems involving performance, debugging, asynchronous processing, and system reliability.',
-    proofStrip: [
-      '1M+ record workloads',
-      '2.3K customers served',
-      '1000+ customer workflows',
-      '10+ release blockers resolved'
-    ],
     email: 'sreesumanth199@gmail.com',
     phone: '7095738136',
     location: 'Hyderabad, India',
