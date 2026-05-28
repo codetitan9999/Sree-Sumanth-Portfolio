@@ -35,25 +35,26 @@ export const portfolioData = {
       duration: 'Jul 2024 - May 2026',
       highlights: [
         'Built a queue-driven parallel batch processor for a legacy export system with worker-based execution, batching, retries, and failure isolation, enabling concurrent execution of 1M+ record workloads (~200 MB/run) while reducing runtime from ~14 minutes to ~2-5 minutes and eliminating timeout failures.',
-        'Built a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
+        'Delivered a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
         'Reverse-engineered existing cross-system mapping workflows and implemented backend APIs for payload generation, transformation logic, conditional routing, and bidirectional mappings, decreasing setup time by ~90-95% from ~20 minutes to ~1-2 minutes.',
         'Improved inbound-shipment sync reliability across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering production sync failures by ~80-90%.',
         'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week delay for a rollout affecting 1000+ customers.'
       ],
-      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'NetSuite', 'Salesforce']
+      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React']
     }
   ],
   projects: [
     {
-      title: 'Durable Workflow Engine',
-      subtitle: 'Go | PostgreSQL | Redis Streams | React',
+      title: 'DurableFlow',
+      subtitle: 'Go | PostgreSQL | Redis Streams | React | TypeScript | Docker | OpenTelemetry | Prometheus | Grafana',
       description:
-        'A durable workflow engine built to make long-running background jobs reliable, using Postgres-backed execution state, Redis Streams task queues, API/worker separation, and outbox-based dispatch for asynchronous orchestration.',
-      impact: 'Shows how durable state, queue-backed execution, and worker separation can make long-running job systems reliable and inspectable in practice.',
+        'Fault-tolerant workflow orchestration engine built in Go with PostgreSQL as the source of truth and Redis Streams for asynchronous task dispatch across API, worker, and dashboard services.',
+      impact: 'Turns long-running job orchestration into a durable, observable system with crash-safe dispatch, replay protection, and operations visibility across retries and recovery.',
       highlights: [
-        'Built a durable workflow engine to make long-running background jobs reliable, with Postgres-backed execution state, Redis Streams task queues, API/worker separation, and outbox-based dispatch for asynchronous orchestration.',
-        'Implemented end-to-end execution tracking, worker processing, task history, and live status visibility across 5 workflow tables and 7 service endpoints.',
-        'Designed the system so execution state remains durable and inspectable as work moves across queueing, processing, and completion stages.'
+        'Built DurableFlow in Go using PostgreSQL as the source of truth and Redis Streams for asynchronous task dispatch across API, worker, and dashboard services.',
+        'Implemented a transactional outbox, durable retries with backoff, dead-letter replay, and Redis consumer-group recovery to keep dispatch and recovery crash-safe under at-least-once delivery.',
+        'Added multi-step workflow chaining and handler-level idempotency with persisted reservations and cached responses to prevent duplicate side effects during replay and recovery.',
+        'Developed a React and TypeScript operations dashboard plus execution snapshot APIs to inspect task attempts, retry state, dead-lettered tasks, and replay flows end to end.'
       ],
       repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
@@ -162,11 +163,11 @@ export const portfolioData = {
   ],
   achievements: [
     {
-      label: '3-Star Coder on CodeChef | 1800+ DSA Rating, Best Global Rank 16',
+      label: '3-Star Coder on CodeChef | 1900+ DSA Rating, Best Global Rank 8',
       url: 'https://www.codechef.com/users/sumanth9999'
     },
     {
-      label: 'Knight Badge on LeetCode | Max Contest Rating 1850+, Top 7%',
+      label: 'Knight Badge on LeetCode | Max Contest Rating 1896, Top 4.5%',
       url: 'https://leetcode.com/u/sreesumanth2002/'
     },
     {
