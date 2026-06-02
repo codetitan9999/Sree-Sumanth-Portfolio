@@ -135,11 +135,12 @@ export const portfolioData = {
     }
   ],
   skills: {
-    languages: ['C++', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
-    frontend: ['React', 'HTML/CSS'],
-    backendApis: ['Node.js', 'Flask', 'REST APIs', 'Redis Streams'],
-    toolsPlatforms: ['Git', 'Docker', 'Postman'],
+    languages: ['C++', 'Python', 'Go', 'JavaScript'],
+    backendApis: ['Node.js', 'Flask', 'REST APIs', 'Redis'],
     databases: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB'],
+    systems: ['Workflow Orchestration', 'Asynchronous Processing', 'Event-Driven Systems', 'Idempotency and Retry Handling'],
+    toolsPlatforms: ['Git', 'Docker', 'OpenTelemetry', 'Prometheus', 'Grafana', 'Postman'],
+    frontend: ['React', 'HTML/CSS'],
     core: [
       'Data Structures and Algorithms',
       'Object-Oriented Programming',
@@ -163,11 +164,11 @@ export const portfolioData = {
   ],
   achievements: [
     {
-      label: '3-Star Coder on CodeChef | 1900+ DSA Rating, Best Global Rank 8',
+      label: '3-Star Coder on CodeChef | 2000+ DSA Rating, Best Global Rank 3',
       url: 'https://www.codechef.com/users/sumanth9999'
     },
     {
-      label: 'Knight Badge on LeetCode | Max Contest Rating 1896, Top 4.5%',
+      label: 'Knight Badge on LeetCode | Max Contest Rating 1900+, Top 3%',
       url: 'https://leetcode.com/u/sreesumanth2002/'
     },
     {
