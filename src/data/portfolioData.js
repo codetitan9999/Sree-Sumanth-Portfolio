@@ -30,15 +30,15 @@ export const portfolioData = {
   experience: [
     {
       company: 'Oracle',
-      role: 'Software Engineer 1',
+      role: 'Software Engineer I',
       location: 'Hyderabad, India',
       duration: 'Jul 2024 - May 2026',
       highlights: [
-        'Built a queue-driven parallel batch processor for a legacy export system with worker-based execution, batching, retries, and failure isolation, enabling concurrent execution of 1M+ record workloads (~200 MB/run) while reducing runtime from ~14 minutes to ~2-5 minutes and eliminating timeout failures.',
-        'Delivered a self-serve mapping workflow for a product serving ~2.3K customers, eliminating manual setup by implementation and support teams and reducing support-dependent turnaround from 1-2 weeks to under 1 hour.',
-        'Reverse-engineered existing cross-system mapping workflows and implemented backend APIs for payload generation, transformation logic, conditional routing, and bidirectional mappings, decreasing setup time by ~90-95% from ~20 minutes to ~1-2 minutes.',
-        'Improved inbound-shipment sync reliability across 1000+ customers by implementing purchase-order synchronization, validation logic, data-consistency checks, and failure handling, lowering production sync failures by ~80-90%.',
-        'Resolved 10+ high-priority release blockers and production issues across integration workflows, including a release-critical sync defect fixed in 2 hours that prevented a 1-week delay for a rollout affecting 1000+ customers.'
+        'Migrated a legacy export pipeline to a queue-based parallel processing model with batching, retries, and failure isolation, reducing processing time for 1M+ record workloads (~200MB/run) from ~14 min to ~2-5 min and eliminating timeout failures.',
+        'Delivered a self-serve mapping workflow for a product serving ~2.3K customers, reducing end-to-end mapping setup turnaround from 1-2 weeks to under 1 hour by replacing manual setup with productized configuration.',
+        'Reverse-engineered legacy cross-system mapping behavior and built backend APIs for payload generation, transformation, conditional routing, and bidirectional mappings, reducing setup time by ~90-95% from ~20 minutes to ~1-2 minutes.',
+        'Improved reliability of the inbound-shipment sync feature for 1000+ customers by adding purchase-order synchronization, retries, validation, and failure handling, reducing recurring production sync failures by ~80-90% based on pre/post-release error trends.',
+        'Fixed a release-critical sync issue during rollout by correcting transformation logic and adding invalid-mapping validation, unblocking deployment in 2 hours and avoiding a 1-week delay.'
       ],
       technologies: ['JavaScript', 'TypeScript', 'Node.js', 'Flask', 'REST APIs', 'SQL', 'React']
     }
@@ -48,13 +48,13 @@ export const portfolioData = {
       title: 'DurableFlow',
       subtitle: 'Go | PostgreSQL | Redis Streams | React | TypeScript | Docker | OpenTelemetry | Prometheus | Grafana',
       description:
-        'Fault-tolerant workflow orchestration engine built in Go with PostgreSQL as the source of truth and Redis Streams for asynchronous task dispatch across API, worker, and dashboard services.',
-      impact: 'Turns long-running job orchestration into a durable, observable system with crash-safe dispatch, replay protection, and operations visibility across retries and recovery.',
+        'Go-based workflow engine for multi-step background jobs using PostgreSQL for durable state and Redis Streams for asynchronous dispatch.',
+      impact: 'Turns multi-step background execution into a durable, observable system with crash-safe dispatch, throughput gains, and strong recovery guarantees.',
       highlights: [
-        'Built DurableFlow in Go using PostgreSQL as the source of truth and Redis Streams for asynchronous task dispatch across API, worker, and dashboard services.',
-        'Implemented a transactional outbox, durable retries with backoff, dead-letter replay, and Redis consumer-group recovery to keep dispatch and recovery crash-safe under at-least-once delivery.',
-        'Added multi-step workflow chaining and handler-level idempotency with persisted reservations and cached responses to prevent duplicate side effects during replay and recovery.',
-        'Developed a React and TypeScript operations dashboard plus execution snapshot APIs to inspect task attempts, retry state, dead-lettered tasks, and replay flows end to end.'
+        'Built DurableFlow, a Go-based workflow engine for multi-step background jobs using PostgreSQL for durable state and Redis Streams for asynchronous dispatch.',
+        'Implemented a transactional outbox, retries with backoff, dead-letter replay, consumer-group recovery, and handler-level idempotency for crash-safe execution under at-least-once delivery.',
+        'Increased throughput by ~19x, from ~5 to ~99 executions/sec at 200 concurrent executions, by tuning outbox polling from 2s to 100ms; sustained ~98 executions/sec after partial worker failure.',
+        'Added a React/TypeScript operations dashboard, Prometheus/Grafana/OpenTelemetry instrumentation, and 24 focused tests for retry, replay, and recovery paths.'
       ],
       repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
@@ -164,7 +164,7 @@ export const portfolioData = {
   ],
   achievements: [
     {
-      label: '3-Star Coder on CodeChef | 2000+ DSA Rating, Best Global Rank 3',
+      label: '3-Star Coder on CodeChef (Competitive Programming) | DSA Rating 2000+, Best Global Rank 3',
       url: 'https://www.codechef.com/users/sumanth9999'
     },
     {
