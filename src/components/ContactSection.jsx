@@ -22,7 +22,6 @@ function ContactSection({ personalInfo }) {
     ['linkedin', 'LinkedIn'],
     ['leetcode', 'LeetCode'],
     ['hackerrank', 'HackerRank'],
-    ['codechef', 'CodeChef'],
     ['codeforces', 'Codeforces']
   ];
 

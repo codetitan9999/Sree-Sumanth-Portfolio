@@ -14,7 +14,6 @@ export const portfolioData = {
       linkedin: 'https://www.linkedin.com/in/sree-sumanth-duddukuri/',
       leetcode: 'https://leetcode.com/u/sreesumanth2002/',
       hackerrank: 'https://www.hackerrank.com/profile/sreesumanth199',
-      codechef: 'https://www.codechef.com/users/sumanth9999',
       codeforces: 'https://codeforces.com/profile/sreesumanth99',
       portfolio: 'https://sree-sumanth-portfolio.vercel.app/'
     }
@@ -48,13 +47,13 @@ export const portfolioData = {
       title: 'DurableFlow',
       subtitle: 'Go | PostgreSQL | Redis Streams | React | TypeScript | Docker | OpenTelemetry | Prometheus | Grafana',
       description:
-        'Go-based workflow engine for multi-step background jobs using PostgreSQL for durable state and Redis Streams for asynchronous dispatch.',
+        'Built DurableFlow, a Go-based workflow engine for multi-step background jobs using PostgreSQL for durable state and Redis Streams for asynchronous dispatch.',
       impact: 'Turns multi-step background execution into a durable, observable system with crash-safe dispatch, throughput gains, and strong recovery guarantees.',
       highlights: [
         'Built DurableFlow, a Go-based workflow engine for multi-step background jobs using PostgreSQL for durable state and Redis Streams for asynchronous dispatch.',
         'Implemented a transactional outbox, retries with backoff, dead-letter replay, consumer-group recovery, and handler-level idempotency for crash-safe execution under at-least-once delivery.',
         'Increased throughput by ~19x, from ~5 to ~99 executions/sec at 200 concurrent executions, by tuning outbox polling from 2s to 100ms; sustained ~98 executions/sec after partial worker failure.',
-        'Added a React/TypeScript operations dashboard, Prometheus/Grafana/OpenTelemetry instrumentation, and 24 focused tests for retry, replay, and recovery paths.'
+        'Added a React/TypeScript operations dashboard, OpenTelemetry/Prometheus/Grafana instrumentation, and 24 focused tests for retry, replay, and recovery paths.'
       ],
       repoUrl: 'https://github.com/codetitan9999/DurableWorkFlowEngine'
     },
@@ -163,10 +162,6 @@ export const portfolioData = {
     }
   ],
   achievements: [
-    {
-      label: '3-Star Coder on CodeChef (Competitive Programming) | DSA Rating 2000+, Best Global Rank 3',
-      url: 'https://www.codechef.com/users/sumanth9999'
-    },
     {
       label: 'Knight Badge on LeetCode | Max Contest Rating 1900+, Top 3%',
       url: 'https://leetcode.com/u/sreesumanth2002/'
